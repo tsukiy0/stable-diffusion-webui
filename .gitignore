@@ -25,3 +25,6 @@ __pycache__
 /.idea
 notification.mp3
 /SwinIR
+
+
+.models/
