@@ -3,4 +3,5 @@ FROM mcr.microsoft.com/vscode/devcontainers/miniconda:0-3
 
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends \
-    vim
+    vim \
+    libg11
