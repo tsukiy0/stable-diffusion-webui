@@ -1,5 +1,5 @@
 {
-	"name": "stable-diffusion-test",
+	"name": "stable-diffusion-webui",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "main",
 	"workspaceFolder": "/workspace",

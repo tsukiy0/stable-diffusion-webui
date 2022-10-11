@@ -4,4 +4,10 @@ FROM mcr.microsoft.com/vscode/devcontainers/miniconda:0-3
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends \
     vim \
-    libg11
+    libgl1
+
+RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
+    && apt-get -y install --no-install-recommends \
+    git \
+    python3 \
+    python3-venv
