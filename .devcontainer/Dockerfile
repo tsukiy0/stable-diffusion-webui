@@ -4,10 +4,8 @@ FROM mcr.microsoft.com/vscode/devcontainers/miniconda:0-3
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends \
     vim \
+    git \
     libgl1
 
-RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-    && apt-get -y install --no-install-recommends \
-    git \
-    python3 \
-    python3-venv
+RUN pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 --extra-index-url https://download.pytorch.org/whl/cu113
+
