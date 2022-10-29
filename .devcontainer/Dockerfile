@@ -7,5 +7,4 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     git \
     libgl1
 
-RUN pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 --extra-index-url https://download.pytorch.org/whl/cu113
-
+RUN pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu113
